@@ -15,6 +15,7 @@ import RootLayout from './layouts/RootLayout';
 import HelpLayout from './layouts/HelpLayout';
 import Faq from './pages/help/Faq';
 import Vmware from './pages/help/Vmware';
+import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,8 @@ const router = createBrowserRouter(
         <Route path='faq' element={<Faq />}/>
         <Route path='vmware'element={<Vmware />}/>
       </Route>
+
+      <Route path='*' element={<NotFound />} />
     </Route>
   )
 )
