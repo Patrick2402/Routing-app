@@ -38,3 +38,20 @@ header nav a {
 .help-layout header nav a.active {
   background-color: orange;
 }
+
+
+.careers a{
+  text-decoration: unset;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 7px;
+
+}
+.careers{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  gap: 10px 10px;
+
+}
