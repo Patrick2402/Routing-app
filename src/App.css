@@ -2,6 +2,7 @@
 
 header nav a.active{
   background-color: rgb(172, 0, 0);
+  border-radius: 7px;
 }
 
 header{
@@ -21,5 +22,19 @@ header nav a {
   text-decoration: unset;
   color: white;
   padding: 1em;
-  font-weight: bold
+  font-weight: 400;
+}
+
+.help-layout header{
+  border: none;
+}
+.help-layout header nav{
+  justify-content: start;
+}
+.help-layout header nav a {
+  border: 3px solid white;
+  border-radius: 7px;
+}
+.help-layout header nav a.active {
+  background-color: orange;
 }
