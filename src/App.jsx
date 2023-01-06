@@ -19,12 +19,14 @@ import NotFound from './pages/NotFound';
 import Careers, { carrersLoader } from './pages/careers/Careers';
 import CareerDetails, { careerDetailsLoader } from './pages/careers/CareerDetails';
 import CareersError from './pages/careers/CareersError';
+import About from './pages/About';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path='contact' element={<Contact />} action={contactAction} />
+      <Route path='about' element={<About />}  />
 
       <Route path='help' element={<HelpLayout />}>
         <Route path='faq' element={<Faq />} />
