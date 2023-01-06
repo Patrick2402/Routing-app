@@ -8,7 +8,7 @@ import './App.css'
 
 // Paths
 import Home from './pages/Home';
-import Contact from './pages/Contact';
+import Contact, { contactAction } from './pages/Contact';
 //Layouts
 import RootLayout from './layouts/RootLayout';
 import HelpLayout from './layouts/HelpLayout';
@@ -24,7 +24,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path='contact' element={<Contact />} />
+      <Route path='contact' element={<Contact />} action={contactAction} />
 
       <Route path='help' element={<HelpLayout />}>
         <Route path='faq' element={<Faq />} />
