@@ -1,7 +1,8 @@
 
 
 header nav a.active{
-  background-color: rgb(172, 0, 0);
+  background-color: #BB004B;
+  border-radius: 7px;
 }
 
 header{
@@ -21,5 +22,125 @@ header nav a {
   text-decoration: unset;
   color: white;
   padding: 1em;
-  font-weight: bold
+  font-weight: 400;
+}
+
+.help-layout header{
+  border: none;
+}
+.help-layout header nav{
+  justify-content: start;
+}
+.help-layout header nav a {
+  border: 3px solid white;
+  border-radius: 7px;
+}
+.help-layout header nav a.active {
+  background-color: orange;
+}
+
+
+.careers a{
+  text-decoration: unset;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 7px;
+
+}
+.careers{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  gap: 10px 10px;
+
+}
+
+.careers a h2:hover{
+  color: #BB004B;
+}
+.career-details a {
+  text-decoration: unset;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 7px;
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.breadcrumbs{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.breadcrumbs a{
+  text-decoration: unset;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.contact Form{
+  display: flex;
+  flex-direction: column;
+  background-color:#494949 ;
+  padding: 3em;
+  border-radius: 7px 102px 7px 7px;
+
+}
+.contact Form label{
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 400;
+  gap: 10px 10px;
+}
+.contact Form label input{
+  width: 300px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: rgb(221, 221, 221);
+}
+.contact Form label input:focus{
+  outline: none;
+}
+.contact Form label textarea{
+  width: 400px;
+  height: 150px;
+  padding: 5px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: rgb(221, 221, 221);
+}
+.contact Form label textarea:focus{
+  outline: none;
+}
+
+.contact Form button{
+  width: 100px;
+  border-radius: 7px;
+  border: 3px solid white;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: white;
+  background-color: unset;
+  padding: 10px;
+  transition: 0.6s all ease;
+}
+.contact Form button:hover{
+  background-color: #BB004B;
+  cursor: pointer;
+
 }
