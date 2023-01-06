@@ -9,8 +9,8 @@ export default function Careers() {
   return (
     <div className="careers">
       {careers.map(career => (
-        <Link to='/' key={career.id}>
-          <p>{career.title}</p>
+        <Link to={career.id.toString()} key={career.id}>
+          <h2>{career.title}</h2>
           <p>Based in {career.location}</p>
           <code>Salary: {career.salary}$</code>
         </Link>
@@ -24,6 +24,9 @@ export default function Careers() {
 
 export const carrersLoader = async () => {
   const res = await fetch('http://localhost:4001/careers'); 
+  if(!res.ok){
+    throw Error('Could not fetch the careers');
+  }
   return res.json();
 }
 // tutaj trzba npm i json-server 
